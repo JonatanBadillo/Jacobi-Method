@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1715107182.10143 "/Users/jonatanbadillo/Desktop/UNIVERSITY/7TH SEMESTER/CONCURRENTE/Jacobi/template_Article.tex" "template_Article.pdf" "template_Article" 1715107183.02717 0
-  "/Users/jonatanbadillo/Desktop/UNIVERSITY/7TH SEMESTER/CONCURRENTE/Jacobi/template_Article.tex" 1715107180.77995 3314 cad2bae820c538ce7de9e408076bed0b ""
+["pdflatex"] 1715107635.63058 "/Users/jonatanbadillo/Desktop/UNIVERSITY/7TH SEMESTER/CONCURRENTE/Jacobi/template_Article.tex" "template_Article.pdf" "template_Article" 1715107637.15562 0
+  "/Users/jonatanbadillo/Desktop/UNIVERSITY/7TH SEMESTER/CONCURRENTE/Jacobi/template_Article.tex" 1715107633.12344 4875 289cb36d6901fc9a5bf0712c71a40d6c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1136768653 1328 5442e22a7072966dbaf88ca900acf3f0 ""
@@ -37,8 +37,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1715030571.49636 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1715030516 8221442 6db3a979d67478d3265c6320666b808e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "template_Article.aux" 1715107182.89245 265 cae33a64157d75e1f3212b90533eaab3 "pdflatex"
-  "template_Article.tex" 1715107180.77995 3314 cad2bae820c538ce7de9e408076bed0b ""
+  "template_Article.aux" 1715107637.0268 391 10cb16ae266c69b6e09ae1f51e1ebb19 "pdflatex"
+  "template_Article.tex" 1715107633.12344 4875 289cb36d6901fc9a5bf0712c71a40d6c ""
   (generated)
   "template_Article.aux"
   "template_Article.log"

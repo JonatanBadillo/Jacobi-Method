@@ -74,6 +74,18 @@ public class JacobiSecuencial {
 }
 \end{verbatim}
 
+\section{Explicación del código Java paralelo}
+
+Este código implementa el método de Jacobi en Java utilizando la biblioteca ForkJoinPool para paralelizar las operaciones. La matriz $A$ y el vector $b$ se definen al principio del código. El vector $X$ se inicializa a $0$ y se usa para almacenar las soluciones actuales, mientras que \texttt{lastX} se usa para almacenar las soluciones de la iteración anterior. El criterio de convergencia $\epsilon$ se establece en $1 \times 10^{-10}$.
+
+El bucle \texttt{while} principal implementa las iteraciones del método de Jacobi. Para cada elemento $i$ del vector $x$, se calcula la suma de $b_i$ y los productos $A_{ij}X_j$ para $j \neq i$ (esta es la parte \texttt{sum -= A[i][j] * lastX[j]} en el código). Luego, se divide esta suma por el coeficiente diagonal $A_{ii}$ para obtener la solución actual $X_i$.
+
+Después de calcular todas las soluciones actuales, se calcula la norma del error como la suma de las diferencias absolutas entre las soluciones actuales y las de la iteración anterior. Si la norma del error es menor que el criterio de convergencia, se termina el bucle.
+
+Finalmente, se imprime el resultado, que es el vector de soluciones $x$.
+
+La principal diferencia entre este código y el código secuencial anterior es que este código utiliza la biblioteca ForkJoinPool para paralelizar las operaciones. Esto puede resultar en un rendimiento significativamente mejorado para problemas grandes, ya que varias operaciones pueden realizarse simultáneamente en diferentes núcleos de la CPU.
+
 
 \end{document}
 
