@@ -30,7 +30,21 @@ $\sum_{i=1}^{n} |x_i^{(k)} - x_i^{(k-1)}| < \epsilon$
 
 Donde $\epsilon$ es el criterio de convergencia.
 
-\section{Implementación en Java}
+\section{Implementación en Java Secuencial}
+
+
+
+El código en Java implementa el método de Jacobi para resolver sistemas de ecuaciones lineales de la forma $Ax = b$, donde $A$ es una matriz de coeficientes, $x$ es el vector de incógnitas, y $b$ es el vector de términos independientes.
+
+En el código, primero se define la matriz $A$ y el vector $B$, que representan los coeficientes del sistema de ecuaciones y los términos independientes, respectivamente.
+
+Se inicializan vectores para almacenar las soluciones iniciales y las soluciones de la iteración anterior. Además, se define un criterio de convergencia, representado por un pequeño valor de error.
+
+Luego, se inicia un bucle while que continuará iterando hasta que se cumpla el criterio de convergencia. Dentro de este bucle, se realiza una serie de cálculos para actualizar las soluciones en cada iteración, utilizando el método de Jacobi. Se calcula la norma del error como la suma de las diferencias absolutas entre las soluciones actuales y las de la iteración anterior.
+
+Si la norma del error es menor que el criterio de convergencia, el bucle se detiene y se imprimen las soluciones encontradas.
+
+
 
 \begin{verbatim}
 public class JacobiSecuencial {
@@ -74,7 +88,7 @@ public class JacobiSecuencial {
 }
 \end{verbatim}
 
-\section{Explicación del código Java paralelo}
+\section{Implementación del código Java paralelo}
 
 Este código implementa el método de Jacobi en Java utilizando la biblioteca ForkJoinPool para paralelizar las operaciones. La matriz $A$ y el vector $b$ se definen al principio del código. El vector $X$ se inicializa a $0$ y se usa para almacenar las soluciones actuales, mientras que \texttt{lastX} se usa para almacenar las soluciones de la iteración anterior. El criterio de convergencia $\epsilon$ se establece en $1 \times 10^{-10}$.
 
